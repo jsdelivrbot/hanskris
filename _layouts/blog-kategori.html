@@ -1,0 +1,18 @@
+<!DOCTYPE html><html lang="{{ site.html_lang }}">{% include head.html %}  <body>{% include nav.html %}
+{% include page-loader.html %}<section class="c c-margin-top grid-center s-margin-bottom-none"><div class="col-9"><h1 class="t-center"><span>Blog -  </span><span class="t-italic t-weight-normal">{{page.title}}</span></h1><p class="t-center">{{page.meta-beskrivelse}}</p><p class="t-center t-tertiary">Andre kategorier: 
+{% for post in site.blog  %}
+{% if post.layout == 'blog-kategori' and post.kategori != page.kategori %}<a href="{{post.url}}" class="t-tertiary m-right-10">{{post.title}}</a>{% endif %}
+{% endfor %}</p></div></section><section class="s-margin-top-none"><div class="blog-container c">{% for post in site.blog %}
+{% if page.kategori == 'alle-indslag' %}
+{% if post.layout == 'blog-kategori' %}
+{% else %}
+{% include post-container.html %}
+{% endif %}
+{% endif %}
+{% if post.kategori == page.kategori %}
+{% if post.layout == 'blog-kategori' %}
+{% else %}
+{% include post-container.html %}
+{% endif %}
+{% endif %}
+{% endfor %}</div></section>{% include footer.html %}</body></html>

@@ -1,0 +1,7 @@
+<!DOCTYPE html><html lang="{{ site.html_lang }}">{% include head.html %}  <body>{% include nav.html %}
+{% include page-loader.html %}<section id="blog-post"><image src="{{page.image}}" class="header-image"></image><div class="c post-container"><h1 class="page-title">{{page.title}}</h1>{% if page.page != true %}  <p class="t-tertiary t-faded t-caption t-center">Af Hans Kristoffer den {{page.date | date: "%d %B %Y"}}</p>{% endif %} <hr class="line-thin m-top-30">{{content | markdownify}}</div>{% if page.page != true %}  <div class="madeby"><hr class="m-bottom-30"><div class="grid"><div class="col-3 f f-center"><img src="/assets/img/hans_kristoffer-profil.jpg" class="image"></div><div class="col-9"><p class="t-tertiary t-faded t-caption m-none">Skrevet af </p><p class="headline">Hans Kristoffer</p><p>Hey! I’m your first Markdown document in StackEdit[^stackedit]. Don’t delete me, I’m very helpful! I can be recovered anyway in the Utils tab of the Settings dialog.</p></div></div></div><div class="seneste-indslag c"><p class="headline t-center">Seneste indslag</p><div class="blog-container">{% for post in site.blog %}
+{% if post.layout == 'blog-kategori' %}
+{% else %}
+{% include post-container.html %}
+{% endif %}
+{% endfor %}</div></div>{% endif %} </section>{% include footer.html %}</body></html>

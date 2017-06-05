@@ -1,0 +1,13 @@
+---
+title: Start
+permalink: /index.html
+meta_beskrivelse: ABC
+layout: default
+cover_image: #
+---
+ <div id="index"><section class="header-section"><div class="c"><div class="header-content"><h1>Tilmeld dig mit ugentligt <span class="t-italic t-weight-normal">livstils design </span><span>nyhedsbrev</span></h1><p>Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle. By the same illusion which lifts the.</p><form action="//hkbh-alro.us12.list-manage.com/subscribe/post?u=703ec8b2e8ec16f0ac1efa4f9&amp;amp;id=3af53b741d" method="post" class="f"><input placeholder="NAVN" type="text" name="FNAME" id="mce-FNAME" class="input input-white-faded l-width-40"/><input placeholder="E-MAIL" type="email" name="EMAIL" id="mce-EMAIL" class="input input-white-faded l-width-60"/><button name="subscribe" id="mc-embedded-subscribe" class="button button-cta">TILMELD</button></form></div></div></section><section><div class="c grid-center"><div class="col-9"><h1 class="t-center">Design dit liv til succes </h1><p class="t-center">Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle. By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside.</p></div><div class="grid"><div class="col-4"><h2>Tjen <span class="t-italic t-weight-normal">Penge Online</span></h2><hr/><p>Vil du gerne tjene ekstra penge ved siden af det du laver nu? Det er muligt! Jeg har samlet 102 måder du kan tjene dine penge online på.</p><a href="" class="button button-cta l-width-100 m-none m-top-30 t-center">LÆS DE 102 BEDSTE MÅDER</a></div><div class="col-4"><h2>Byg Din <span class="t-italic t-weight-normal">Egen Forretning</span></h2><hr/><p>Mange har en ide eller kunne godt tænke sig en. Få adgang til min guide og find ud af hvordan du får en idé og føre den ud i livet.</p><a href="" class="button button-cta l-width-100 m-none m-top-30 t-center">FÅ ADGANG TIL MIN GUIDE</a></div><div class="col-4"><h2>Design <span class="t-italic t-weight-normal">Dit Liv</span></h2><hr/><p>Du kan med sikkerhed få meget mere ud af din hverdag. Læs denne artikel og bliv klogere på hvad verdens topfolk gør for at få succes.</p><a href="" class="button button-cta l-width-100 m-none m-top-30 t-center">ÆNDRE DIT LIV TIL SUCCES</a></div></div></div></section>{% include about.html %}<section><div class="c"><h1>Blog</h1><p>Alt omkring iværksætteri, liv og andet.</p><div class="blog-container">{% for post in site.blog limit:6 %}
+{% if post.layout == 'blog-kategori' %}
+{% else %}
+{% include post-container.html %}
+{% endif %}
+{% endfor %}</div></div></section></div>

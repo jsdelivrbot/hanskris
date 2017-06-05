@@ -1,0 +1,1 @@
+$(function(){for(var o=document.querySelectorAll("#blog-post a"),e=0,t=o.length;e<t;e++)o[e].hostname!=window.location.hostname&&(o[e].target="_blank")}),$(document).ready(function(){$("#page-loader").fadeOut("slow")});

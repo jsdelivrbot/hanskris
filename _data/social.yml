@@ -1,0 +1,41 @@
+- service: facebook
+  title: Facebook
+  url: https://www.facebook.com/hans.kristoffer.9
+  icon: fa-facebook
+  show: true
+  color: 3B5998
+
+- service: 500px
+  title: 500px
+  url: https://500px.com/hans_kristoffer
+  icon: fa-500px
+  show: true
+  color: 0099E5
+
+- service: instagram
+  title: Instagram
+  url: https://www.instagram.com/hans.kristoffer/
+  icon: fa-instagram
+  show: false
+  color:
+
+- service: google_plus
+  title: Google Plus
+  url: https://plus.google.com/u/0/104043326113258195410
+  icon: fa-google-plus
+  show: false
+  color:
+
+- service: email
+  title: E-mail
+  url: mailto:hej@hanskristoffer.dk
+  icon: fa-envelope
+  show: true
+  color: 475762
+
+- service: linkedin
+  title: LinkedIn
+  url: https://www.linkedin.com/in/hans-kristoffer/
+  icon: fa-linkedin
+  show: true
+  color: 0077B5

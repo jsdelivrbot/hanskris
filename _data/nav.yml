@@ -1,0 +1,32 @@
+- title: Startside
+  url: /
+
+- title: Om
+  url: /om/
+  sub-links:
+  - title: Nuværende
+    url: /om/nuvarende/
+
+  - title: Arbejde
+    url: /om/arbejde/
+
+- title: Blog
+  url: /blog/
+  sub-links:
+    - title: Iværksætter
+      url: /blog/ivaerksaetter/
+
+    - title: Personlig Udvikling
+      url: /blog/personlig-udvikling/
+
+# - title: Nyhedsbrev
+#  url: /nyhedsbrev/
+
+- title: Læse liste
+  url: /laese-liste/
+
+- title: Værktøjer
+  url: /vaerktoejer/
+
+- title: Kontakt
+  url: /kontakt/

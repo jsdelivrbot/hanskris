@@ -2,7 +2,7 @@
   dir: /bower_components/jquery/dist/jquery.min.js
 
 - title: Local functions
-  dir: /assets/js/functions.js
+  dir: /assets/js/functions-min.js
 
 
 - title: FontAwesome

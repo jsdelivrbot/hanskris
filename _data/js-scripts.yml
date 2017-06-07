@@ -1,5 +1,5 @@
 - title: jQuery
-  dir: /bower_components/jquery/dist/jquery.min.js
+  dir: /assets/js/tools/jquery.min-min.js
 
 - title: Local functions
   dir: /assets/js/functions-min.js

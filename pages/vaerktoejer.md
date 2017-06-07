@@ -4,9 +4,8 @@ permalink: /vaerktoejer/
 layout: blog-post
 description: #
 meta_beskrivelse: ABC
-coverImage: #
-image: /assets/img/pages/vaerktoejer.jpg
-page: true
+cover_image: /assets/img/pages/vaerktoejer.jpg
+is_post_layout_page: true
 ---
 
 Jeg har en stor interresse for online værktøjer og ressourcer. I rigtig lang tid har jeg været på udkig efter værktøjer som kan højne og forbeder arbejde processer for både privat og virksomheds brug.

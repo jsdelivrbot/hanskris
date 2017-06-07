@@ -12,27 +12,71 @@ typekit_id: lqi5hgi
 html_lang: en
 
 # Analytic
-google_analytic: #
+google_analytic: UA-100587614-1
 facebook_id: #
 
 # Collections
 collections:
-  blog:
+  blog-posts:
     output: true
-    permalink: /:collection/:name
+    permalink: /blog/:title/
+
+  blog-kategorier:
+    output: true
+    permalink: /blog/:title/
+
 
 # Defaults
 defaults:
-  - scope:
-      path: ""
-      type: blog
+  -
+    scope:
+      path: "/pages"
+      type: pages
     values:
+      title:
+      meta_beskrivelse:
+      cover_image:
+      permalink:
+      layout: default
+      is_post_layout_page: false
+
+  -
+    scope:
+      path: ""
+      type: blog-posts
+    values:
+      title:
+      meta-beskrivelse:
+      blog-kategorier:
+      post_date:
+      cover_image:
+      post_image:
       layout: blog-post
-      permalink: /:collection/:path/
+
+  -
+    scope:
+      path: ""
+      type: blog-kategorier
+    values:
+      title:
+      meta-beskrivelse:
+      layout: blog-kategori
+      cover_image:
+
+  -
+    scope:
+      path: ""
+      type: boeger
+    values:
+      title:
+      forfatter:
+      stjerner:
+      link:
+      kategori:
+      bedste-laering:
 
 # Build settings
 markdown: kramdown
-permalink: pretty
 
 gems:
 

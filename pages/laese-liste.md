@@ -2,11 +2,9 @@
 title: Læse liste
 permalink: /laese-liste/
 layout: blog-post
-description: #
 meta_beskrivelse: ABC
-coverImage:
-image: /assets/img/pages/laese-liste.jpg
-page: true
+cover_image: /assets/img/pages/laese-liste.jpg
+is_post_layout_page: true
 ---
 surround text, etc.
 

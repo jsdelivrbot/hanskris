@@ -1,11 +1,12 @@
 ---
 title: Læse liste
-permalink: /laese-liste/
+permalink: "/laese-liste/"
 layout: blog-post
 meta_beskrivelse: ABC
-cover_image: /assets/img/pages/laese-liste.jpg
+cover_image: "/assets/img/pages/laese-liste.jpg"
 is_post_layout_page: true
 ---
+
 surround text, etc.
 
 | ------------- | ------------- | -----:|

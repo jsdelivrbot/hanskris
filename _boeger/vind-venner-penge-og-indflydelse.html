@@ -1,8 +1,8 @@
 ---
-title:
-forfatter:
-stjerner:
-link:
-kategori:
-bedste-laering:
+forfatter: 
+stjerner: 
+link: 
+kategori: 
+bedste-laering: 
 ---
+

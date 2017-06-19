@@ -1,9 +1,10 @@
 ---
 title: Nuværende
-permalink: /om/nuvaerende/
+permalink: "/om/nuvaerende/"
 layout: blog-post
-meta_beskrivelse: Læs hvad der intereser mig for tiden og hvad jeg er i gang med at projekter. Bliver opdateret løbende.
-cover_image: /assets/img/pages/arbejde.jpg
+meta_beskrivelse: Læs hvad der intereser mig for tiden og hvad jeg er i gang med at
+  projekter. Bliver opdateret løbende.
+cover_image: "/assets/img/pages/arbejde.jpg"
 is_post_layout_page: true
 ---
 

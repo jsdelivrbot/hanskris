@@ -1,9 +1,10 @@
 ---
 title: Om
-permalink: /om/
+permalink: "/om/"
 layout: blog-post
-meta_beskrivelse: Hans Kristoffer er en iværksætter som skriver om personlig udvikling, markedting, forretning og værktøjer.
-cover_image: /assets/img/pages/om.jpg
+meta_beskrivelse: Hans Kristoffer er en iværksætter som skriver om personlig udvikling,
+  markedting, forretning og værktøjer.
+cover_image: "/assets/img/pages/om.jpg"
 is_post_layout_page: true
 ---
 

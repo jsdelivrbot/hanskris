@@ -1,9 +1,10 @@
 ---
 title: Arbejde
-permalink: /om/arbejde/
+permalink: "/om/arbejde/"
 layout: blog-post
-meta_beskrivelse: Hans Kristoffer står bag NextTalk, ProTerrasse og denne side. Læs mere her for at høre om hans involvering.
-cover_image: /assets/img/pages/arbejde.jpg
+meta_beskrivelse: Hans Kristoffer står bag NextTalk, ProTerrasse og denne side. Læs
+  mere her for at høre om hans involvering.
+cover_image: "/assets/img/pages/arbejde.jpg"
 is_post_layout_page: true
 ---
 

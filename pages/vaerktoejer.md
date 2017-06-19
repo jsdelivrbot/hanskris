@@ -1,10 +1,10 @@
 ---
 title: Værktøjer
-permalink: /vaerktoejer/
+permalink: "/vaerktoejer/"
 layout: blog-post
-description: #
+description: 
 meta_beskrivelse: ABC
-cover_image: /assets/img/pages/vaerktoejer.jpg
+cover_image: "/assets/img/pages/vaerktoejer.jpg"
 is_post_layout_page: true
 ---
 

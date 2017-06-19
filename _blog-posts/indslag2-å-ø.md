@@ -1,10 +1,10 @@
 ---
-title: indslag ap2åø
-kategori: Iværksætter
+title: indslag 1
+kategori: iværksætter
 description: Test page
 dato: 2016-02-24
 cover_image: assets/img/hans_kristoffer.jpg
-image: /assets/img/pages/laese-liste.jpg
+post_image: /assets/img/pages/laese-liste.jpg
 ---
 
 

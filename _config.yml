@@ -46,7 +46,7 @@ defaults:
       type: blog-posts
     values:
       title:
-      meta-beskrivelse:
+      meta_beskrivelse:
       blog-kategorier:
       post_date:
       cover_image:
@@ -59,7 +59,7 @@ defaults:
       type: blog-kategorier
     values:
       title:
-      meta-beskrivelse:
+      meta_beskrivelse:
       layout: blog-kategori
       cover_image:
 

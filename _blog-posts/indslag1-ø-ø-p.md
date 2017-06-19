@@ -1,9 +1,9 @@
 ---
-title: indslag æå
-kategori: Personlig Udvikling
+title: indslag 2
+kategori: personlig udvikling
 description: Test page
-dato: 2016-02-24
-cover_image: assets/img/hans_kristoffer.jpg
+post_date: 2016-02-24
+cover_image: /assets/img/hans_kristoffer.jpg
 post_image: /assets/img/pages/laese-liste.jpg
 ---
 

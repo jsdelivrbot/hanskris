@@ -1,11 +1,12 @@
 <!DOCTYPE html><html lang="{{ site.html_lang }}">{% include head.html %}  <body>{% include nav.html %}
-{% include page-loader.html %}<section class="c c-margin-top grid-center s-margin-bottom-none"><div class="col-9"><h1 class="t-center"><span>Blog -  </span><span class="t-italic t-weight-normal">{{page.title}}</span></h1><p class="t-center">{{page.meta-beskrivelse}}</p><p class="t-center t-tertiary">Andre kategorier: {% for kategori in site.blog-kategorier  %}
-{% if kategori.slug != page.slug %}<a class="t-tertiary m-right-10" href="{{kategori.url}}">{{kategori.title}}</a>{% endif %}
-{% endfor %}</p></div></section><section class="s-margin-top-none"><div class="blog-container c">{% for post in site.blog-posts %}
-{% if page.slug == 'alle-indslag' %}
+{% include page-loader.html %}<section class="c c-margin-top grid-center s-margin-bottom-none"><div class="col-9"><h1 class="t-center"><span>Blog -  </span><span class="t-italic t-weight-normal">{{page.title}}</span></h1><p class="t-center">{{page.meta_beskrivelse}}</p><p class="t-center t-tertiary">Andre kategorier: {% if page.url != '/blog/' %}<a class="t-tertiary m-right-10" href="/blog/">Alle indslag</a>{% endif %}
+{% for kategori in site.data.blogKategorier.blogKategori  %}
+{% if kategori.title != page.title %}<a class="t-tertiary m-right-10" href="{{kategori.url}}">{{kategori.title}}</a>{% endif %}
+{% endfor %}</p></div></section><section class="s-margin-top-none"><div class="blog-container c">{% for post in site.data.blogIndslag.blogIndslag %}
+{% if page.url == '/blog/' %}
 {% include post-container.html %}
 {% endif %}
-{% if post.kategori == page.title %}
+{% if post.kategori.title == page.title %}
 {% include post-container.html %}
 {% endif %}
 {% endfor %}</div></section>{% include footer.html %}</body></html>

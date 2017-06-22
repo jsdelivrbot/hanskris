@@ -1,75 +1,99 @@
----
+# Site
 title: Hans Kristoffer
-timezone: UTC
-collections:
-  blog-kategorier:
-    title: Blog Kategorier
-    output: true
-    permalink: "/blog/:title/"
-  blog-posts:
-    title: Blog Posts
-    output: true
-    permalink: "/blog/:title/"
-  posts:
-    title: Posts
-    output: true
-  uploads:
-    title: Uploads
-    output: true
-defaults:
-- scope:
-    path: "/pages"
-    type: pages
-  values:
-    title: 
-    meta_beskrivelse: 
-    cover_image: 
-    permalink: 
-    layout: default
-    is_post_layout_page: false
-- scope:
-    path: ''
-    type: blog-posts
-  values:
-    title: 
-    meta_beskrivelse: 
-    blog-kategorier: 
-    post_date: 
-    cover_image: 
-    post_image: 
-    layout: blog-post
-- scope:
-    path: ''
-    type: blog-kategorier
-  values:
-    title: 
-    meta_beskrivelse: 
-    layout: blog-kategori
-    cover_image: 
-- scope:
-    path: ''
-    type: boeger
-  values:
-    title: 
-    forfatter: 
-    stjerner: 
-    link: 
-    kategori: 
-    bedste-laering: 
-description: 'Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for Google search
-  results) and in your feed.xml site description.
-
-'
-baseurl: ''
-url: https://hanskris.dk
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://hanskris.dk" # the base hostname & protocol for your site, e.g. http://example.com
+# Other
 typekit_id: lqi5hgi
 html_lang: en
+
+# Analytic
 google_analytic: UA-100587614-1
-facebook_id: 
+facebook_id: #
+
+# Collections
+collections:
+  blog-posts:
+    output: true
+    permalink: /blog/:title/
+
+  blog-kategorier:
+    output: true
+    permalink: /blog/:title/
+
+contentful:
+  spaces:
+    - blogIndslag:
+        space: zn1z1oy8fudj
+        access_token: 921add494d4fc253cc98fe8619ad7a2992a03ef1bc17f46ee80ae1e84a616079
+        all_entries: true
+        destination: /
+        cda_query:
+          content_type: 'blogIndslag'
+    - blogKategorier:
+        space: zn1z1oy8fudj
+        access_token: 921add494d4fc253cc98fe8619ad7a2992a03ef1bc17f46ee80ae1e84a616079
+        all_entries: true
+        destination: /
+        cda_query:
+          content_type: 'blogKategori'
+
+    - almindeligSider:
+        space: zn1z1oy8fudj
+        access_token: 921add494d4fc253cc98fe8619ad7a2992a03ef1bc17f46ee80ae1e84a616079
+        all_entries: true
+        destination: /
+        cda_query:
+          content_type: 'almindeligSide'
+
+
+page_gen-dirs: true
+page_gen:
+  - data: 'blogIndslag.blogIndslag'
+    template: 'blog-post'
+    name: 'url'
+    dir: 'blog'
+
+  - data: 'blogKategorier.blogKategori'
+    template: 'blog-kategori'
+    name: 'url'
+    dir: 'blog'
+
+  - data: 'almindeligSider.almindeligSide'
+    template: 'blog-post'
+    name: 'url'
+    dir: '/'
+
+
+# Defaults
+defaults:
+  -
+    scope:
+      path: ""
+      type: sider
+    values:
+      is_post_layout_page: true
+
+  -
+    scope:
+      path: ""
+      type: boeger
+    values:
+      title:
+      forfatter:
+      stjerner:
+      link:
+      kategori:
+      bedste-laering:
+
+# Build settings
 markdown: kramdown
-gems: 
+
+
 exclude:
-- Gemfile
-- Gemfile.lock
-- "*.jade"
+  - Gemfile
+  - Gemfile.lock
+  - "*.jade"

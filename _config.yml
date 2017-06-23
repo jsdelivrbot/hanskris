@@ -16,13 +16,7 @@ facebook_id: #
 
 # Collections
 collections:
-  blog-posts:
-    output: true
-    permalink: /blog/:title/
 
-  blog-kategorier:
-    output: true
-    permalink: /blog/:title/
 
 contentful:
   spaces:
@@ -49,6 +43,22 @@ contentful:
         cda_query:
           content_type: 'almindeligSide'
 
+    - menuElementer:
+        space: zn1z1oy8fudj
+        access_token: 921add494d4fc253cc98fe8619ad7a2992a03ef1bc17f46ee80ae1e84a616079
+        all_entries: true
+        destination: /
+        cda_query:
+          content_type: 'menuElement'
+
+    - socialLinks:
+        space: zn1z1oy8fudj
+        access_token: 921add494d4fc253cc98fe8619ad7a2992a03ef1bc17f46ee80ae1e84a616079
+        all_entries: true
+        destination: /
+        cda_query:
+          content_type: 'socialLink'
+
 
 page_gen-dirs: true
 page_gen:
@@ -66,28 +76,6 @@ page_gen:
     template: 'blog-post'
     name: 'url'
     dir: '/'
-
-
-# Defaults
-defaults:
-  -
-    scope:
-      path: ""
-      type: sider
-    values:
-      is_post_layout_page: true
-
-  -
-    scope:
-      path: ""
-      type: boeger
-    values:
-      title:
-      forfatter:
-      stjerner:
-      link:
-      kategori:
-      bedste-laering:
 
 # Build settings
 markdown: kramdown

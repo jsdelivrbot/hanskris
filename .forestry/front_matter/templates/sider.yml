@@ -1,0 +1,8 @@
+---
+hide_body: false
+fields:
+- name: is_post_layout_page
+  label: Is post layout page
+  type: boolean
+  hidden: false
+  default: true

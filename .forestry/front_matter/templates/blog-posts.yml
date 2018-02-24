@@ -1,0 +1,68 @@
+---
+hide_body: false
+fields:
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: 
+- name: kategori
+  label: Kategori
+  type: text
+  hidden: false
+  default: ''
+- name: description
+  label: Description
+  type: text
+  hidden: false
+  default: ''
+- name: dato
+  label: Dato
+  type: datetime
+  hidden: false
+  default: ''
+- name: cover_image
+  label: Cover image
+  type: file
+  hidden: false
+  default: 
+- name: post_image
+  label: Post image
+  type: file
+  hidden: false
+  default: 
+- name: date
+  label: Date
+  type: datetime
+  hidden: false
+  default: ''
+- name: image
+  label: Image
+  type: file
+  hidden: false
+  default: ''
+- name: meta-beskrivelse
+  label: Meta beskrivelse
+  type: text
+  hidden: false
+  default: 
+- name: blog-kategorier
+  label: Blog kategorier
+  type: select
+  hidden: false
+  default: 
+  config:
+    source:
+      type: pages
+      section: blog-kategorier
+  description: ABC hjælpetekst
+- name: post_date
+  label: Post date
+  type: text
+  hidden: false
+  default: 
+- name: layout
+  label: Layout
+  type: text
+  hidden: false
+  default: blog-post

@@ -8,7 +8,7 @@
   dir: https://use.fontawesome.com/6830fbc74b.js
 
 - title: Stickyscroll
-  dir: https://cdn.rawgit.com/leafo/sticky-kit/v1.1.2/jquery.sticky-kit.min.js
+  dir: https://cdn.jsdelivr.net/gh/leafo/sticky-kit@v1.1.2/jquery.sticky-kit.min.js
 
 - title: Copy
   dir: https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js
